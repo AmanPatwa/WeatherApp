@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="patwa.aman.com.weatherapp.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/finalweather"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <TextView
+            android:id="@+id/cityname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="Mumbai"
+            android:textColor="@android:color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/temptext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cityname"
+            android:layout_marginTop="46dp"
+            android:layout_toEndOf="@+id/pressuretext"
+            android:gravity="center_horizontal"
+            android:text="12 deg"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/windtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/temptext"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="18dp"
+            android:text="Wind"
+            android:textColor="#fff"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/cloudtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/windtext"
+            android:layout_below="@+id/windtext"
+            android:layout_marginTop="11dp"
+            android:text="Cloud"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/pressuretext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/cloudtext"
+            android:layout_below="@+id/cloudtext"
+            android:layout_marginTop="12dp"
+            android:text="Pressure"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/humidtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/pressuretext"
+            android:layout_below="@+id/pressuretext"
+            android:layout_marginTop="11dp"
+            android:text="Humidity"
+            android:textColor="#fff"
+            tools:layout_editor_absoluteX="495dp"
+            tools:layout_editor_absoluteY="246dp" />
+
+        <TextView
+            android:id="@+id/Sunrisetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/humidtext"
+            android:layout_below="@+id/humidtext"
+            android:layout_marginTop="13dp"
+            android:text="Sunrise"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/Sunsettext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/Sunrisetext"
+            android:layout_below="@+id/Sunrisetext"
+            android:layout_marginTop="12dp"
+            android:text="Sunset"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/lasttext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Sunsettext"
+            android:layout_marginTop="72dp"
+            android:layout_toEndOf="@+id/Sunsettext"
+            android:text="Last Updated"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
